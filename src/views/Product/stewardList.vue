@@ -1,7 +1,7 @@
 <template>
   <div class="pd-container">
     <product-Nav></product-Nav>
-    <product-List id="2"></product-List>
+    <product-List id="1"></product-List>
   </div>
 </template>
 <script>
@@ -20,5 +20,5 @@
   }
 </script>
 <style>
-  
+
 </style>

@@ -1,11 +1,14 @@
 <template>
   <div class="foot-bar">
+    <div class="link" @click="jump('/Member/contactUs')">
+        <text class="title">联系我们</text>
+    </div>
     <div class="link" @click="jump('/Product/siftFinance')">
         <text class="title">理财中心</text>
     </div>
-    <div class="link" @click="jump('/Member/AccountCenter')">
+    <!-- <div class="link" @click="jump('/Member/AccountCenter')">
         <text class="title">账户中心</text>
-    </div>
+    </div> -->
   </div>
 </template>
 <style scoped>
@@ -15,17 +18,17 @@
   right: 0;
   bottom: 0;
   background-color: #333;
+  display: -webkit-box;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
 }
 .link{
-  padding-left: 40px;
-  padding-right: 40px;
+  flex: 1;
 }
 .title{
-  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
   font-size: 26px;
   line-height: 60px;
   color: #FFFFFF;
