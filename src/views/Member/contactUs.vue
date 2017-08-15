@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" @click="update">
+  <div class="wrapper">
     <text>联系我们</text>
   </div>
 </template>
@@ -16,8 +16,6 @@
       return {
 
       }
-    },
-    components: {
     }
   }
 </script>

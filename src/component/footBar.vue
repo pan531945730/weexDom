@@ -6,9 +6,9 @@
     <div class="link" @click="jump('/Product/siftFinance')">
         <text class="title">理财中心</text>
     </div>
-    <!-- <div class="link" @click="jump('/Member/AccountCenter')">
+    <div class="link" @click="jump('/Member/AccountCenter')">
         <text class="title">账户中心</text>
-    </div> -->
+    </div>
   </div>
 </template>
 <style scoped>

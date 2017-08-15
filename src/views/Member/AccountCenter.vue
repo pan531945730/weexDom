@@ -4,33 +4,25 @@
        <!-- <img src="../../assets/images/logo.png" alt="94bank" width="100%" height="auto" /> -->
     </div>
     <div class="bd-form">
-        <label>
-            <em class="bd-ico tel"></em>
-            <span class="bd-input">
+        <div class="fm-li">
+            <div class="bd-ico tel"></div>
+            <div class="bd-input">
                 <input type="tel" v-on:focus="focus" v-on:blur="blur" v-on:input="inPut" name="usertel" v-model="usertel" placeholder="请输入手机号码" value="" maxlength="11" id="tel" />
-                <i class="clear" id="tel_clear" v-show="telClear" @click="clear"></i>
-            </span>
-        </label>
-        <label>
-            <em class="bd-ico pwd"></em>
-            <span class="bd-input">
+                <div class="clear" id="tel_clear" v-show="telClear" @click="clear"></div>
+            </div>
+        </div>
+        <div class="fm-li">
+            <div class="bd-ico pwd"></div>
+            <div class="bd-input">
                 <input type="password" v-on:focus="focus" v-on:blur="blur" v-on:input="inPut" name="password" v-model="password" placeholder="请输入94bank登录密码" value=""  id="pwd" />
-                <i class="clear" id="pwd_clear" v-show="pwdClear" @click="clear"></i>
-                <em class="eyes" @click="eyes"></em>
-            </span>
-        </label>
-        <label class="imgcode-mod" v-show="isimgcode">
-            <em class="bd-ico imgcode"></em>
-            <span class="bd-input">
-                <input type="number" placeholder="请输入图形验证码" value=""  maxlength="4" id="bd_imgcode" />
-                <i class="clear"></i>
-            </span>
-            <img src="#" width="75" height="30" class="img-code" alt="图形验证码" />
-        </label>
-        <p class="error-tip"><span></span><a href="#" class="log-findpwd">忘记密码？</a></p>
-        <a href="javascript:void(0);" v-on:click="_login" class="bd-btn"><span>立即登录</span></a>
+                <div class="clear" id="pwd_clear" v-show="pwdClear" @click="clear"></div>
+                <div class="eyes" @click="eyes"></div>
+            </div>
+        </div>
+        <div class="error-tip"><div></div><a href="#" class="log-findpwd">忘记密码？</a></div>
+        <a href="javascript:void(0);" v-on:click="_login" class="bd-btn"><text>立即登录</text></a>
     </div>
-    <p class="fir-act">新用户，<span>立即注册</span></p>
+    <div class="fir-act">新用户，<text>立即注册</text></div>
   </div>
 </template>
 <style>
@@ -146,7 +138,7 @@
   .bd-form {
     padding: 0 15px;
   }
-  .bd-form label {
+  .bd-form .fm-li {
     display: -webkit-box;
     -webkit-box-align: center;
     padding: 17px 0 8px 0;

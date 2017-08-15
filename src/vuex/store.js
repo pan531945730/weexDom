@@ -1,10 +1,13 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 import Vuex from 'vuex'
 
 import com from './modules/com';
-import user from './modules/user';
+//import user from './modules/user';
 
-Vue.use(Vuex)
+// Vuex is auto installed on the web
+if (WXEnvironment.platform !== 'Web') {
+  Vue.use(Vuex)
+}
 
 const store = new Vuex.Store({
    modules: {

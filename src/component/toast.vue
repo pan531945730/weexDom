@@ -7,7 +7,7 @@
                 <i class="icon" v-show="fail">&#xe62d;</i>
             </div>
             <div class="text">
-                <span>{{toastMsg}}</span>
+                <text>{{toastMsg}}11111</text>
             </div>
         </div>
     </div>

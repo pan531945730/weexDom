@@ -2,7 +2,7 @@
     <div class="alert">
         <div class="alert-wrap">
             <div class="text">
-                <span>{{alertMsg}}</span>
+                <text>{{alertMsg}}</text>
             </div>
         </div>
     </div>

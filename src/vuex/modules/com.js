@@ -8,7 +8,7 @@ const state = {
     showSuccess: true,
     showFail: false,
     toastMsg: '操作成功',
-    alertMsg: '退出登录',
+    alertMsg: '退出111登录',
     showAlert: false,
     loading : false
 }
